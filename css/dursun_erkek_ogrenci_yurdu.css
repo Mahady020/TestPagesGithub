@@ -1,0 +1,415 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+/*----------------------------------------------------- header---------------------------------------------------------------*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+   
+}
+.header-div{
+    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resim1{
+    height: 75px;
+    width: 100px;
+    display: flex;
+}
+.head-div{
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+    padding-top: 8px;
+
+}
+.header-h{
+   /* background-color: #e67e22;*/
+    float: right;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 50px;
+    padding: 0;
+    display: flex;
+
+}
+.header-p{
+   /* background-color: blue;*/
+    font-size: 0.8em;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+    display: flex;
+    float: right;
+}
+
+
+
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.selected{
+
+    border: 2px solid white;
+    
+}
+/*------------ header end--------*/
+
+
+/*-------------------------------------SECTION---------------------------------*/
+
+.yurt-kontayner{
+    margin: 20px;
+}
+.yurt-ad{
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.yurt-resimler{
+    height: 380px;
+    width: 600px;
+     margin-left: auto;
+    margin-right: auto;
+}
+.yurt-resim{
+    height: 380px;
+    width: 600px;
+    display: flex;
+   
+}
+.yurt-ozellikle{
+
+
+}
+.yurt-li{
+    background-color: #444444a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    
+    
+
+}
+.yu-h{
+    display: inline-block;
+   
+}
+.yurt-p{
+   /* background-color: #e67e22;*/
+    
+}
+
+.content{
+    display: block; /* Start visible, will be toggled later */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.content.open{
+    max-height: 600px;
+}
+.yurt-li-buton{
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #444;
+    border-radius: 8px;
+}
+
+/********************genel bilgi*********************/
+.genel-bilgi{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(0, 255, 255, 0.148);
+    
+    
+}
+
+
+.genel-h{
+    text-decoration: underline;
+    margin: 10px 20px;
+}
+.genel-p{
+   line-height: 28px;
+   margin: 10px 20px;
+}
+
+
+/*************************ozellikle********************************/
+.ozellikle{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 255, 255, 0.148);
+}
+.ozellikle ul {
+    line-height: 25px;
+}
+.ozellikle ul li{
+    list-style: none;
+}
+.fa-check{
+    color: greenyellow;
+}
+.fa-xmark{
+    color: red;
+}
+
+/***************************yorumlar******************************/
+.yorumlar{
+   background-color: rgba(0, 255, 255, 0.148);
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inputBox{
+    width: 250px;
+    position: relative;
+    margin-left: auto;
+   margin-right: auto;
+    
+}
+
+
+.yu-input, .text-yu-input{
+   margin-top: 20px;
+   width: 250px;
+   padding: 10px;
+   border: 2px solid black;
+   background-color: rgba(0, 255, 255, 0.06);
+   border-radius: 5px;
+   outline: none;
+   color: black;
+   font-size: 1em;
+   transition: 0.5s;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.textareaspan, span{
+    position: absolute;
+    left: 12px;
+    top: 31px;
+    pointer-events: none;
+    font-size: 1em;
+    color:black;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.yu-input:valid ~ span,
+.yu-input:focus ~ span
+{
+    color: black;
+    transform: translateX(10px) translateY(-15px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    letter-spacing: 0.2em;
+
+
+}
+.yu-input:valid ,
+.yu-input:focus
+{
+    border: 2px solid black
+}
+.text-yu-input:valid ~.textareaspan,
+.text-yu-input:valid ~.textareaspan
+{
+    color: black;
+    transform: translateX(10px) translateY(-15px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    letter-spacing: 0.2em;
+}
+.yurt-gonder{
+    background-color: rgba(0, 255, 255, 0.356);
+}
+.yurt-gonder:hover{
+    background-color: rgb(0, 255, 255);
+}
+
+/**********************iletisim****************************/
+.iletisim{
+    width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 255, 255, 0.148);
+
+}
+.iletisim-p{
+    margin: 10px 20px;
+}
+.aytas-map{
+    
+}
+.a-m{
+    width: 400px;
+    height: 300px;
+    margin: 0 5px 10px 5px;
+}
+
+/*************four li*********/
+.four-li{
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+
+/*------------------------------------------------------Footer---------------------------------------------------*/
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+footer-section {
+    width: 22%;
+}
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f39c12;
+}
+
+
+.social-links li {
+    list-style: none;
+}
+
+.social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #f39c12;
+}
+
+.footer-section form {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    background-color: #fff;
+    color: #333;
+}
+
+.footer-section button {
+    padding: 8px 15px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-section button:hover {
+    background-color: #e67e22;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.back-to-top {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-to-top a {
+    color: #f39c12;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.back-to-top a:hover {
+    color: #e67e22;
+}
+
+/*footer end*/

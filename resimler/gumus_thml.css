@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+body{
+    background-color: #f0f0f0;
+
+}
+/***********************header*********************************/
+
+
+
+/*************************navigation*******************************/
+nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 255, 255, 0.219);
+      height: 100px; 
+      margin-top: 10px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+       
+}
+nav li{
+    position: relative;
+    /*width: 600px*/
+    height: 80px;
+    display: flex;
+    /*background-color: azure;*/
+    
+   
+}
+nav li ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /*background-color: brown;*/
+    
+
+}
+nav li ul .header-a{
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 13px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 2vh;
+    
+}
+.aktif{
+    box-shadow: -4px 4px 8px red;
+}
+.header-a:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    text-decoration: underline;
+}
+@media screen and ( max-width: 600px ){
+    nav li ul .header-a{
+        padding: 10px 5px;
+        margin: 5px;
+        font-weight: normal;
+    }
+
+}
+
+
+/**************************section******************************/
+.otelkart{
+    margin: 20px auto;
+    padding: 0;
+    width: 1000px;
+}
+.kart-head{
+    margin: 20px auto 10px 20px;
+
+}
+.odalar{
+    height: 250px;
+    margin: 20px;
+    background-color: red;
+}
+img{
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin-top: 25px;
+   
+}
+.oda-tip{
+    padding-top: 25px;
+    margin-left: 25px;
+
+}
+.oda-fiyat{
+    color: greenyellow;
+    padding: 30px;
+}
+.oda-buton{
+    float: right;
+}
+
+
+
+
+
+
+/***************************footer*****************************/
+
+
+footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    line-height: 1.5;
+}
+.konteyner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    padding: 0 0 0 20px;
+
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footer-head{
+    text-decoration: underline;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.888);
+    margin-bottom: 30px;
+    position: relative;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    margin-bottom: 3px;
+}
+.footer-a{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.635);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+
+}
+.footer-a:hover{
+    color: rgba(255, 255, 255, 0.906);
+    background-color: #24262b;
+    border: 0px;
+}
+.fa-brands{
+    color:rgba(255, 255, 255, 0.635) ;
+    font-size: 25px;
+    margin: 5px;
+}
+.fa-brands:hover{
+    color: rgb(255, 255, 255);
+    background-color: #24262b;
+    border: 0px;
+}
+.fa-facebook:hover{
+    color: rgb(255, 255, 255);
+    background-color: #24262b;
+    border: 0px;
+}
+@media screen and ( max-width: 600px ){
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+
+}
